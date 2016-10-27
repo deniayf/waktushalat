@@ -209,8 +209,8 @@
 	// make monthly timetable
 	function makeTable(year, month, lat, lng, timeZone, dst) {		
 		var items = {day: 'Tanggal', imsak: 'Imsyak', fajr: 'Subuh', 
-					dhuhr: 'Dzuhur', asr: 'Ashar', // sunset: 'Sunset', 
-					maghrib: 'Maghrib', isha: 'Isya'};
+					dhuhr: 'Dzuhur', asr: 'Ashar', sunset: 'Sunset', 
+					maghrib: 'Maghrib', isha: 'Isya', midnight : 'Midnight'};
 
 		var tbody = document.createElement('tbody');
 		tbody.appendChild(makeTableRow(items, items, 'head-row'));
