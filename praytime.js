@@ -129,7 +129,7 @@ function PrayTimes(method) {
 
 	//---------------------- Default Settings --------------------
 	
-	calcMethod = 'Makkah',
+	calcMethod = 'INDO',
 
 	// do not change anything here; use adjust method instead
 	setting = {  
