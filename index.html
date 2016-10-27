@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Imsyak15710.GitHub.io by deniayf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		body, tr, form {font-family: tahoma; font-size: 12px; color: #404040; text-align: center; margin: 0; padding: 0}
+		pre {font-family: courier, serif, size: 10pt; margin: 0px 8px;}
+		input {font-size: 12px;}
+		.header {background:#eef; border-bottom: 1px solid #ddd; padding: 7px;}
+		.caption {font-size: 20px; color: #d95722; text-align: center; width: 10em;}
+		.arrow {font-weight: bold; text-decoration: none; color: #3D3D3D; }
+		.arrow:hover {text-decoration: underline;}
+		.command {font-weight: bold; text-decoration: none; color: #AAAAAA; }
+		.command:hover {text-decoration: underline;}
+		.timetable {border-width: 1px; border-style: outset; border-collapse: collapse; border-color: gray; margin: 0 auto;}
+		.timetable td {border-width: 1px; border-spacing: 1px; padding: 1px; border-style: inset; border-color: #CCCCCC;}
+		.head-row {color: black; background-color: #eef;}
+		.today-row {background-color: #F8F7F4; color: black}
+.timetable {
+	text-align: center;
+	width:70%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #3f7f00;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.timetable table{
+		border-collapse: collapse;
+				border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.timetable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.timetable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.timetable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.timetable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.timetable tr:hover td{
+	
+}
+.timetable tr:nth-child(odd) { background-color:#d6e6a6; }
+.timetable tr:nth-child(even){ background-color:#ffffff; }
+.timetable td{
+	vertical-align:middle;
+	border:1px solid #3f7f00;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:7px;
+	font-size:10px;
+	font-family:Helvetica;
+	font-weight:normal;
+	color:#000000;
+}.timetable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.timetable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.timetable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.timetable tr:first-child td{
+		background:-o-linear-gradient(bottom, #5fbf00 5%, #3f7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #3f7f00) );
+	background:-moz-linear-gradient( center top, #5fbf00 5%, #3f7f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbf00", endColorstr="#3f7f00");	background: -o-linear-gradient(top,#5fbf00,3f7f00);
+
+	background-color:green;
+	border:0px solid #3f7f00;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Times New Roman;
+	font-weight:bold;
+	color:black;
+}
+.timetable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #5fbf00 5%, #3f7f00 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5fbf00), color-stop(1, #3f7f00) );
+	background:-moz-linear-gradient( center top, #5fbf00 5%, #3f7f00 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#5fbf00", endColorstr="#3f7f00");	background: -o-linear-gradient(top,#5fbf00,3f7f00);
+
+	background-color:#5fbf00;
+}
+.timetable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.timetable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+@media print{
+	.no-print, .no-print * {
+		display: none !important;
+	}
+@page {
+		size: A4;
+		margin: 0cm;
+}
+.container{
+		width: 20cm;
+		min-height: 29.7cm;
+		padding: 1cm;
+		margin: 0.1cm auto;
+	}
+.content{
+		text-align:center;
+	}
+.timetable tr:nth-child(odd) { background-color:#d6e6a6; }
+.timetable tr:nth-child(even){ background-color:#ffffff; }
+}
+.container{
+		width: 20cm;
+		min-height: 29.7cm;
+		padding: 1cm;
+		margin: 0.1cm auto;
+		border: 1px #D3D3D3 solid;
+		border-radius: 5px;
+		background: #eee;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	}
+.content{
+		text-align:center;
+	}
+</style>
+</head>
+
+<body onload="window.print()">
+<script type="text/javascript" src="praytime.js"></script>
+<div class='container'>
+<div class="content">
+  <header>
+	<p><a href="CetakJadwalSholatBulanan.htm">
+	<img background-color='transparent' border='0' width='80' height='80' src="https://googledrive.com/host/0B31hvi-4DoT1Ym1PQzhGR2hyMFE" align='left' hspace='12' title=""></a>
+	</p>
+	<p><b><span style='font-size:16.0pt; line-height:115%'>DEWAN&nbsp;KEMAKMURAN&nbsp;MASJID&nbsp;AL-MUHAJIRIN</span><br />
+	<span style='font-size:14.0pt; line-height:115%'>GRAHA&nbsp;INDIRA, CITRA&nbsp;RAYA</span><br /></b>
+	<span>Kelurahan Panongan, Kecamatan Mekar Bakti, Kabupaten Tangerang</span><br />
+	<span>Graha Indira Blok K.3, Telp. 0812.1163.7574</span>
+	</header>
+	<hr>
+ <div class="header">
+ 	<span style='font-size:14.0pt; line-height:115%'><b>Jadwal Imsyakiah Kabupaten Tangerang - Banten</b></span>
+ </div>
+<br/>
+<table align="center">
+	<b><span id="table-title" class="caption"></span></b>
+</table>
+
+<br/>
+<div align="center" style="margin-top: 7px"><small>
+	Sumber: <a href="http://almuhajirin15710.blogspot.com/" class="command float:left">DKM&nbsp;Al-Muhajirin</a> |
+	Format Waktu: <a id="time-format" href="javascript:switchFormat(1)" title="Change clock format" class="command"></a></small>
+</div>
+<table id="timetable" class="timetable">
+	<tbody>&nbsp;</tbody>
+</table>
+
+<br/>
+
+<script type="text/javascript">
+
+	var currentDate = new Date();
+	var timeFormat = 1; 
+	switchFormat(0);
+
+	// display monthly timetable
+	function displayMonth(offset) {
+		var lat = -6.2490;
+		var lng = 106.5149;
+		var timeZone = 7;
+		var dst = 'Auto';
+		var method = 'MWL';
+
+		prayTimes.setMethod(method);
+		currentDate.setMonth(currentDate.getMonth()+ 1* offset);
+		var month = currentDate.getMonth();
+		var year = currentDate.getFullYear();
+		var title = monthFullName(month)+ ' '+ year;
+		$('table-title').innerHTML = title;
+		makeTable(year, month, lat, lng, timeZone, dst);
+	}
+
+	// make monthly timetable
+	function makeTable(year, month, lat, lng, timeZone, dst) {		
+		var items = {day: 'Tanggal', imsak: 'Imsyak', fajr: 'Subuh', 
+					dhuhr: 'Dzuhur', asr: 'Ashar', // sunset: 'Sunset', 
+					maghrib: 'Maghrib', isha: 'Isya'};
+
+		var tbody = document.createElement('tbody');
+		tbody.appendChild(makeTableRow(items, items, 'head-row'));
+
+		var date = new Date(year, month, 1);
+		var endDate = new Date(year, month+ 1, 1);
+		var format = timeFormat ? '24h':'12hNS';
+
+		while (date < endDate) {
+			var times = prayTimes.getTimes(date, [lat, lng], timeZone, dst, format);
+			times.day = date.getDate();
+			var today = new Date(); 
+			var isToday = (date.getMonth() == today.getMonth()) && (date.getDate() == today.getDate());
+			var klass = isToday ? 'today-row' : '';
+			tbody.appendChild(makeTableRow(times, items, klass));
+			date.setDate(date.getDate()+ 1);  // next day
+		}
+		removeAllChild($('timetable'));
+		$('timetable').appendChild(tbody);
+	}
+
+	// make a table row
+	function makeTableRow(data, items, klass) {
+		var row = document.createElement('tr');
+		for (var i in items) {
+			var cell = document.createElement('td');
+			cell.innerHTML = data[i];
+			cell.style.width = i=='day' ? '2.5em' : '3.7em';
+			row.appendChild(cell);
+		}
+		row.className = klass;
+		return row;		
+	}
+
+	// remove all children of a node
+	function removeAllChild(node) {
+		if (node == undefined || node == null)
+			return;
+
+		while (node.firstChild)
+			node.removeChild(node.firstChild);
+	}
+
+	// switch time format
+	function switchFormat(offset) {
+		var formats = ['24-hour', '12-hour'];
+		timeFormat = (timeFormat+ offset)% 2;
+		$('time-format').innerHTML = formats[timeFormat];
+		update();
+	}
+
+	// update table
+	function update() {
+		displayMonth(0);
+	}
+
+	// return month full name
+	function monthFullName(month) {
+		var monthName = new Array('January', 'February', 'March', 'April', 'May', 'June', 
+						'July', 'August', 'September', 'October', 'November', 'December');
+		return monthName[month];
+	}
+
+	function $(id) {
+		return document.getElementById(id);
+	}
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43274712-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</div> <!-- en content -->
+</div> <!-- end container -->
+</body>
+</html>
