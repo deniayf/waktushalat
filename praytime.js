@@ -63,6 +63,9 @@ function PrayTimes(method) {
 
 	// Calculation Methods
 	methods = {
+		INDO: {
+			name: 'Muslim World League',
+			params: { fajr: 20, isha: 18 } },
 		MWL: {
 			name: 'Muslim World League',
 			params: { fajr: 18, isha: 17 } },
